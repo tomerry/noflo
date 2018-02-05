@@ -1,0 +1,55 @@
+{
+  "name": "020503",
+  "version": "0.0.1",
+  "description": "020503",
+  "scripts": {
+    "build": "webpack --verbose --profile --colors --display-error-details --config webpack.config.prod.js --progress",
+    "dev": "webpack-dev-server --config webpack.config.dev.js"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "font-awesome": "^4.5.0",
+    "lodash": "4.11.1",
+    "prop-types": "^15.6.0",
+    "qrcode.react": "^0.7.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-google-recaptcha": "^0.9.9",
+    "react-intl": "^2.4.0",
+    "react-particles-js": "^2.1.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-transition-group": "^2.2.1",
+    "reactstrap": "^4.8.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "universal-cookie": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-loader": "6.2.0",
+    "babel-polyfill": "6.5.0",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-react": "6.3.13",
+    "babel-preset-react-hmre": "1.1.0",
+    "babel-preset-stage-0": "6.5.0",
+    "css-loader": "0.23.1",
+    "file-loader": "0.8.5",
+    "font-awesome": "4.5.0",
+    "font-awesome-webpack": "0.0.4",
+    "html-webpack-plugin": "2.9.0",
+    "json-loader": "^0.5.7",
+    "node-sass": "3.13.1",
+    "sass-loader": "3.1.2",
+    "style-loader": "0.13.0",
+    "transform-runtime": "0.0.0",
+    "url-loader": "0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "6.10.1",
+    "npm": ">3.0.0"
+  }
+}
