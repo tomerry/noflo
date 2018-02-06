@@ -9,31 +9,18 @@ module.exports =
         },
         module: {
             loaders: [
-                {
-                    test: /\.scss$/,
-                    loaders: ["style-loader", "css-loader", "sass-loader"]
-                },
-                {
-                    test: /\.css/,
-                    loaders: ["style-loader", "css-loader"]
-                },
-                {
-                    test: /\.jsx?$/,
-                    loader: 'babel-loader'
-                },
-                { test: /\.json$/, loader: 'json-loader' },
-                {
-                    test: /\.(woff|eot|ttf|otf|svg)$/,
-                    loader: "url-loader"
-                }
+                {test: /\.scss$/, loaders: ["style-loader", "css-loader", "sass-loader"]},
+                {test: /\.css/, loaders: ["style-loader", "css-loader"]},
+                {test: /\.jsx?$/, loader: 'babel-loader', exclude: path.join(__dirname, 'src/lib')},
+                {test: /\.json$/, loader: 'json-loader'},
+                {test: /\.(woff|eot|ttf|otf|svg)$/, loader: "url-loader"}
             ]
         },
         resolve: {
             root: path.resolve('.'),
             modulesDirectories: ['node_modules'],
             extensions: ['', '.js', '.jsx', '.json'],
-            alias: {
-            }
+            alias: {}
         },
         plugins: [
             new HtmlwebpackPlugin({

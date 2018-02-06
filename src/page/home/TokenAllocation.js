@@ -5,8 +5,6 @@ import {FormattedMessage} from 'react-intl';
 import CDNImage from '../../component/util/CDNImage';
 
 class TokenAllocation extends React.Component {
-
-
     render() {
         return (
             <Section name="token-allocation">
@@ -72,10 +70,4 @@ class TokenAllocation extends React.Component {
 
 }
 
-
 export default TokenAllocation;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/TokenAllocation.js

@@ -35,10 +35,4 @@ class SocialBanner extends React.Component {
     }
 }
 
-
 export default injectIntl(SocialBanner);
-
-
-
-// WEBPACK FOOTER //
-// ./src/component/SocialBanner.js

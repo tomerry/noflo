@@ -89,10 +89,10 @@ class Web3Service {
     }
 
     loadScript() {
+
         return new Promise((resolve, reject) => {
             const script = document.createElement('script');
-
-            script.src = '/vendor/web3.min.js';
+            script.src = '/lib/web3.min.js';
             script.async = true;
             script.onload = function () {
                 let provider = new Web3.providers.HttpProvider(this.httpFallbackProvider);
@@ -100,9 +100,9 @@ class Web3Service {
                 window.web3 = new Web3(provider);
                 resolve();
             }.bind(this);
-
             document.body.appendChild(script);
         });
+
     }
 
 

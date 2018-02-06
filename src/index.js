@@ -5,7 +5,7 @@ import {Provider} from 'react-redux'
 import thunk from 'redux-thunk';
 
 import App from './App';
-import './scss/main.scss';
+// import './scss/main.scss';
 import reducers from './page/reducers'
 import web3Service from './services/web3';
 import IntlWrapper from './component/IntlWrapper';

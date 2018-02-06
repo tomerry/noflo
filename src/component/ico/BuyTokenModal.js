@@ -57,65 +57,19 @@ class BuyTokenModal extends React.Component {
         this.setState({documentUploaded: true, message: null});
     }
 
-    trackStep(step) {
-        if (window.ga !== undefined) {
-            window.ga('send', 'event', 'buy-modal', step);
-        }
-
-        if (window.fbq !== undefined) {
-            window.fbq('trackCustom', 'BUY-MODAL-' + step.toUpperCase());
-        }
-
-        this.trackGtag(step);
-
-        window.dataLayer.push({event: 'buy-modal.' + step})
-    }
-
-    trackGtag(step) {
-        if (window.gtag === undefined) {
-            return;
-        }
-
-        switch (step) {
-            case 'select-address':
-                gtag('event', 'conversion', {
-                    'allow_custom_scripts': true,
-                    'send_to': 'DC-8333030/openm0/openm0+standard'
-                });
-                break;
-            case 'signup':
-                gtag('event', 'conversion', {
-                    'allow_custom_scripts': true,
-                    'send_to': 'DC-8333030/signu0/signu0+standard'
-                });
-                break;
-            case 'buy-tokens':
-                gtag('event', 'conversion', {
-                    'allow_custom_scripts': true,
-                    'send_to': 'DC-8333030/buyto00/buy-m0+standard'
-                });
-                break;
-        }
-    }
-
-
     renderBody() {
         if (this.state.txId) {
-            this.trackStep('successful-transaction');
             return this.renderSuccess();
         }
 
         if (!this.state.selectedAddress) {
-            this.trackStep('select-address');
             return this.renderSelectAddress();
         }
 
         if (this.state.selectedAddress && this.state.whitelisted) {
-            this.trackStep('buy-tokens');
             return this.renderBuyTokens();
         }
 
-        this.trackStep('signup');
         return this.renderSignUp();
     }
 
@@ -168,7 +122,6 @@ class BuyTokenModal extends React.Component {
                 <ModalBody>
                     {this.state.message ? (<Alert color="info">{this.state.message}</Alert>) : ''}
                     {this.renderBody()}
-
                 </ModalBody>
             </Modal>
         );

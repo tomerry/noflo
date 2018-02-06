@@ -45,7 +45,8 @@ const members = [{
         position: 'Advisor Cryptocurrency',
         imgSrc: '/img/team/advisor/aaron-koenig.png',
         linkedIn: 'https://www.aaron-koenig.com/'
-    }];
+    }
+];
 
 class AdvisoryTeamSection extends React.Component {
     render() {

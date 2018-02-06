@@ -18,9 +18,9 @@ class NavMain extends React.Component {
                 <NavItem>
                     <NavLink href="/#section-roadmap"><FormattedMessage id="header.roadmap"/></NavLink>
                 </NavItem>
-                <NavItem>
-                    <NavLink href="/bounty"><FormattedMessage id="header.bounty"/></NavLink>
-                </NavItem>
+                {/*<NavItem>*/}
+                    {/*<NavLink href="/bounty"><FormattedMessage id="header.bounty"/></NavLink>*/}
+                {/*</NavItem>*/}
                 <NavItem>
                     <NavLink href="/#section-faq"><FormattedMessage id="header.help"/></NavLink>
                 </NavItem>

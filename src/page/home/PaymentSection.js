@@ -4,9 +4,7 @@ import {Row} from 'reactstrap';
 import {FormattedHTMLMessage} from 'react-intl';
 import CDNImage from '../../component/util/CDNImage';
 
-
 class PaymentSection extends React.Component {
-
 
     render() {
         return (
@@ -25,10 +23,4 @@ class PaymentSection extends React.Component {
 
 }
 
-
 export default PaymentSection;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/PaymentSection.js

@@ -56,7 +56,6 @@ class Home extends Component {
                     <PaymentSection/>
                 </div>
 
-
                 <BuyTokenBanner/>
 
                 <div className="container">
@@ -94,8 +93,6 @@ class Home extends Component {
                     <GetInTouch/>
                 </div>
 
-
-
                 <Web3Provider noLoader>
                     <BuyTokensModal/>
                 </Web3Provider>
@@ -106,8 +103,3 @@ class Home extends Component {
 }
 
 export default Home;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/Home.js

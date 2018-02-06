@@ -56,7 +56,7 @@ class HeaderFixed extends React.Component {
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <NavMain/>
                         </Collapse>
-                        <LanguageSwitcher/>
+                        {/*<LanguageSwitcher/>*/}
                     </div>
                 </Navbar>
             </header>

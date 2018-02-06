@@ -65,7 +65,6 @@ export const getTokenSaleProgress = (contract) => (dispatch) => {
         })
 };
 
-
 export const getCurrentTokensPerEther = (contract) => (dispatch) => {
     return new Promise(
         (resolve, reject) => {
@@ -81,7 +80,6 @@ export const getCurrentTokensPerEther = (contract) => (dispatch) => {
         })
 
 };
-
 
 export const isWhitelisted = (contract, address) => (dispatch) => {
     return new Promise(

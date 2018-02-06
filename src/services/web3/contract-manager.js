@@ -21,7 +21,6 @@ class ContractManager {
             contractsCache[name] = Contract.at(address);
         }
 
-
         return contractsCache[name];
     }
 

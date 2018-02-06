@@ -21,11 +21,11 @@ function modalReducer(state = initialState, action) {
             newState[action.modal].open = false;
             return newState;
 
-
         case actions.MODAL_ERROR_MESSAGE:
             newState = {...state};
             newState[action.modal].message = action.message;
             return newState;
+
         default:
             return state;
     }

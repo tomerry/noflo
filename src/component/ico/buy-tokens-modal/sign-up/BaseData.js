@@ -1,7 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 // import ReCAPTCHA from 'react-google-recaptcha' ;
-
 import {Button, Form, FormGroup, Input, Label} from 'reactstrap';
 import contractManager from './../../../../services/web3/contract-manager';
 import {getUtmParameters, getReferrerData} from './../../../../services/tracker';
@@ -42,11 +41,9 @@ class BaseData extends React.Component {
         this.submit = this.submit.bind(this);
     }
 
-
     onCaptchaResolved(captcha) {
         this.sendData(captcha);
     }
-
 
     submit() {
         this.recaptcha.execute();
@@ -130,7 +127,6 @@ class BaseData extends React.Component {
         this.setState({formData});
     }
 
-
     hasError(name) {
         return this.state.validationError[name] !== undefined;
     }
@@ -210,14 +206,11 @@ class BaseData extends React.Component {
         );
     }
 
-
 }
-
 
 BaseData.propTypes = {
     address: PropTypes.string.isRequired,
     afterSubmit: PropTypes.func.isRequired
 };
-
 
 export default BaseData;

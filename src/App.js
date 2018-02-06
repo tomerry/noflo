@@ -15,10 +15,7 @@ class App extends Component {
                 <div className="app">
                     <Header/>
                     <HeaderFixed/>
-                    <Switch>
-                        <Route path="/bounty" component={Bounty}/>
-                        <Route component={Home}/>
-                    </Switch>
+                    <Home />
                     <Footer/>
                 </div>
             </BrowserRouter>

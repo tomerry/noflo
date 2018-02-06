@@ -15,14 +15,13 @@ class Web3Provider extends React.Component {
         const format = {
             decimalSeparator: '.',
             groupSeparator: ' ',
-            groupSize:      3,
+            groupSize: 3,
             secondaryGroupSize: 0,
             fractionGroupSeparator: ' ',
             fractionGroupSize: 0
         };
 
         window.web3.BigNumber.config({FORMAT: format});
-
 
         this.setState({loaded: window.Web3 !== undefined})
     }
@@ -36,9 +35,11 @@ class Web3Provider extends React.Component {
             )
         }
         web3Service.getWeb3()
-            .then(() => {
-                this.setLoaded();
-            });
+            .then(
+                () => {
+                    this.setLoaded();
+                }
+            );
 
         if (this.props.noLoader) {
             return null

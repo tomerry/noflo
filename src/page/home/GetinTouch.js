@@ -2,9 +2,7 @@ import * as React from 'react';
 import Section from '../../component/Section';
 import {Row} from 'reactstrap';
 
-
 class GetInTouch extends React.Component {
-
 
     render() {
         return (
@@ -43,10 +41,4 @@ class GetInTouch extends React.Component {
 
 }
 
-
 export default GetInTouch;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/GetInTouch.js

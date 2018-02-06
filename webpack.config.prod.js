@@ -22,11 +22,11 @@ config.plugins = config.plugins.concat([
     //     },
     //     sourceMap: false
     // }),
-    new webpack.DefinePlugin({
-        'process.env': {
-            NODE_ENV: JSON.stringify('production')
-        }
-    }),
+    // new webpack.DefinePlugin({
+    //     'process.env': {
+    //         NODE_ENV: JSON.stringify('production')
+    //     }
+    // }),
     new webpack.optimize.CommonsChunkPlugin({
         name: 'vender',
         minChunks: function (module, count) {

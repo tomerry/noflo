@@ -3,9 +3,7 @@ import Section from '../../component/Section';
 import {Col, Row, Table} from 'reactstrap';
 import CDNImage from '../../component/util/CDNImage';
 
-
 class RoadmapSection extends React.Component {
-
 
     render() {
         return (
@@ -17,10 +15,4 @@ class RoadmapSection extends React.Component {
 
 }
 
-
 export default RoadmapSection;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/RoadmapSection.js

@@ -84,11 +84,4 @@ class Faq extends React.Component {
     }
 }
 
-
-
 export default Faq;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/Faq.js

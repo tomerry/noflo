@@ -66,7 +66,6 @@ class SelectAddress extends React.Component {
         }
     }
 
-
     handleAddressChange(e) {
         let newAddress = e.target.value;
         this.setNewAddress(newAddress);
@@ -158,7 +157,6 @@ class SelectAddress extends React.Component {
         );
     }
 
-
     render() {
         let isWeb3Browser = web3.currentProvider._fallback === undefined;
         return (
@@ -178,7 +176,6 @@ class SelectAddress extends React.Component {
             </div>
         );
     }
-
 
 }
 

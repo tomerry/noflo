@@ -6,7 +6,6 @@ import CDNImage from '../../../component/util/CDNImage';
 
 class Member extends React.Component {
 
-
     render() {
 
         let linkedIn = false;
@@ -35,10 +34,4 @@ class Member extends React.Component {
     }
 }
 
-
 export default Member;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/team/Member.js

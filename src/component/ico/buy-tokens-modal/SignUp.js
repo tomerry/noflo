@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import BaseData from './sign-up/BaseData';
 import {Alert} from 'reactstrap';
 
-
 class SignUp extends React.Component {
     constructor(props) {
         super(props);

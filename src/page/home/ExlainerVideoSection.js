@@ -17,10 +17,4 @@ class ExlpainerVideoSection extends React.Component {
 
 }
 
-
 export default ExlpainerVideoSection;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/ExlainerVideoSection.js

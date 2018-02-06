@@ -68,7 +68,8 @@ class HeroSection extends React.Component {
                                 <FormattedMessage id='section.hero.button'/>
                             </Button>
 
-                            <a href="/pdf/Copytrack_ICO_Whitepaper.pdf" target="_blank" className="btn btn-primary btn-block mt-3">
+                            <a href="/pdf/Copytrack_ICO_Whitepaper.pdf" target="_blank"
+                               className="btn btn-primary btn-block mt-3">
                                 <FormattedMessage id='section.hero.businessWhitepaper'/>
                             </a>
                             <a href="/pdf/Copytrack_ICO_Technical_Whitepaper.pdf" target="_blank"
@@ -81,7 +82,8 @@ class HeroSection extends React.Component {
                             {/*JOIN TELEGRAM GROUP*/}
                             {/*</a>*/}
                             {/*</div>*/}
-                            <a className="btn btn-primary btn-block mt-3" href="https://www.copytrack.com" target="_blank">
+                            <a className="btn btn-primary btn-block mt-3" href="https://www.copytrack.com"
+                               target="_blank">
                                 BUSINESS WEBSITE
                             </a>
                         </div>
@@ -117,7 +119,6 @@ class HeroSection extends React.Component {
                     </div>
                 </Row>
 
-
             </Section>
         );
     }
@@ -132,10 +133,4 @@ const mapDispatchToProps = (dispatch) => {
     };
 };
 
-
 export default injectIntl(connect(null, mapDispatchToProps)(HeroSection));
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/HeroSection.js

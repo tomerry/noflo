@@ -36,19 +36,14 @@ class BuyTokenBanner extends React.Component {
 }
 
 
-
 const mapDispatchToProps = (dispatch) => {
     return {
         openBuyTokenModal: () => {
-            dispatch(actions.openModal('buyTokens'))
+            dispatch(actions.openModal('buyTokens'));
+            return false;
         },
     };
 };
 
 
 export default injectIntl(connect(null, mapDispatchToProps)(BuyTokenBanner));
-
-
-
-// WEBPACK FOOTER //
-// ./src/component/BuyTokenBanner.js

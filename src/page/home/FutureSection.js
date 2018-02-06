@@ -7,7 +7,6 @@ import CDNImage from '../../component/util/CDNImage';
 
 class FutureSection extends React.Component {
 
-
     render() {
         return (
             <Section name="future">
@@ -25,10 +24,4 @@ class FutureSection extends React.Component {
 
 }
 
-
 export default FutureSection;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/FutureSection.js

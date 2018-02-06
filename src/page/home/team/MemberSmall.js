@@ -4,7 +4,6 @@ import CDNImage from '../../../component/util/CDNImage';
 
 class MemberSmall extends React.Component {
 
-
     render() {
         return (
             <Card>
@@ -21,10 +20,4 @@ class MemberSmall extends React.Component {
 
 }
 
-
 export default MemberSmall;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/team/MemberSmall.js

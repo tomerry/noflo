@@ -7,7 +7,6 @@ import CDNImage from '../../component/util/CDNImage';
 
 class CopyrightRegisterSection extends React.Component {
 
-
     render() {
         return (
             <Section name="copyright-register" subtitle>
@@ -27,8 +26,3 @@ class CopyrightRegisterSection extends React.Component {
 
 
 export default CopyrightRegisterSection;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/CopyrightRegisterSection.js

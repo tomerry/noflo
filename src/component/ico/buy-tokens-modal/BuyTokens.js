@@ -1,11 +1,10 @@
 import {connect} from 'react-redux';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import * as actions from './../../../actions/web3/token-sale';
 import QRCode from 'qrcode.react';
-import {
-    Alert, Button, Input, InputGroup, InputGroupAddon, Label, Row
-} from 'reactstrap';
+import {Alert, Button, Input, InputGroup, InputGroupAddon, Label, Row} from 'reactstrap';
+
+import * as actions from './../../../actions/web3/token-sale';
 import contractManager from './../../../services/web3/contract-manager';
 import config from './../../../config';
 import bonus from '../../../services/bonus';
@@ -120,7 +119,6 @@ class BuyTokens extends React.Component {
         )
     }
 
-
     renderWarning() {
         if (this.state.etherToSpend < 0.1) {
             return (
@@ -199,7 +197,6 @@ class BuyTokens extends React.Component {
         )
     }
 
-
     renderBuyButton() {
         return (
             <div>
@@ -232,7 +229,6 @@ class BuyTokens extends React.Component {
             </div>
         )
     }
-
 
     renderQrCode() {
         let amount = this.state.etherToSpend ? this.state.etherToSpend : 1;
@@ -274,8 +270,6 @@ class BuyTokens extends React.Component {
     }
 
     render() {
-
-
         return (
             <div className="buy-tokens-step">
                 {this.renderAddress()}
@@ -284,7 +278,6 @@ class BuyTokens extends React.Component {
                 {this.renderCalculator()}
                 {this.renderButtons()}
             </div>
-
         );
     }
 }

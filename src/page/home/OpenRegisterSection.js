@@ -4,9 +4,7 @@ import {Row} from 'reactstrap';
 import {FormattedHTMLMessage} from 'react-intl';
 import CDNImage from '../../component/util/CDNImage';
 
-
 class OpenRegisterSection extends React.Component {
-
 
     render() {
         return (
@@ -27,10 +25,4 @@ class OpenRegisterSection extends React.Component {
 
 }
 
-
 export default OpenRegisterSection;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/OpenRegisterSection.js

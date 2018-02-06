@@ -69,7 +69,6 @@ class Countdown extends React.Component {
     }
 }
 
-
 Countdown.propTypes = {
     endTime: PropTypes.number.isRequired
 };

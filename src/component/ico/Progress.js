@@ -36,7 +36,6 @@ class Progress extends React.Component {
             return (<div className="loader"><i className="fa fa-spin fa-spinner" aria-hidden="true"/></div>);
         }
 
-
         return (
             <div className="tokensale-progress">
                 <Row>

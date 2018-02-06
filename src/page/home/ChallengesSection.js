@@ -23,10 +23,4 @@ class ChallengesSection extends React.Component {
 
 }
 
-
 export default ChallengesSection;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/ChallengesSection.js

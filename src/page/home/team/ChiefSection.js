@@ -34,8 +34,3 @@ class ChiefSection extends React.Component {
 }
 
 export default ChiefSection;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/team/ChiefSection.js

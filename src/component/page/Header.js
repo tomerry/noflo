@@ -1,9 +1,5 @@
 import * as React from 'react';
-import {
-    Collapse,
-    Navbar,
-    NavbarBrand, NavbarToggler,
-} from 'reactstrap';
+import {Collapse, Navbar, NavbarBrand, NavbarToggler,} from 'reactstrap';
 import NavMain from './NavMain';
 import LanguageSwitcher from './LanguageSwitcher';
 import CDNImage from '../util/CDNImage';
@@ -11,7 +7,6 @@ import CDNImage from '../util/CDNImage';
 class Header extends React.Component {
     constructor(props) {
         super(props);
-
         this.toggle = this.toggle.bind(this);
         this.state = {
             isOpen: false,
@@ -37,7 +32,7 @@ class Header extends React.Component {
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <NavMain/>
                         </Collapse>
-                        <LanguageSwitcher />
+                        {/*<LanguageSwitcher />*/}
                     </div>
                 </Navbar>
             </header>

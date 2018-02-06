@@ -30,6 +30,7 @@ class Facts extends React.Component {
         }
         return (<div>+ <br />{bonusCpy} Bonus CPY/ETH</div>)
     }
+
     render() {
         return (
             <Section name="facts" hideHeader>
@@ -76,8 +77,3 @@ const mapStateToProps = (state) => {
 
 
 export default connect(mapStateToProps)(Facts);
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/Facts.js

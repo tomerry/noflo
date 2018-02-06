@@ -32,10 +32,4 @@ class HeadSection extends React.Component {
     }
 }
 
-
 export default HeadSection;
-
-
-
-// WEBPACK FOOTER //
-// ./src/page/home/team/HeadSection.js
